@@ -38,7 +38,7 @@ function userByToken(sender)
                 $("#tokenFeedbackSuccess").removeClass('hidden');
                 $("#tokenFeedbackError").addClass('hidden');
                 $("#tokenFeedbackSuccess").html('Nastavi kupovinu kao <strong>' + data.user.firstName + '</strong>' +
-                    '&nbsp&nbsp<button data-parent="#checkout-page" data-toggle="collapse" data-target="#payment-address-content" id="sender" class="btn btn-primary btn-sm">Prihavti</button>&nbsp' +
+                    '&nbsp&nbsp<button data-parent="#checkout-page" data-toggle="collapse" data-target="#payment-address-content" id="sender" class="btn btn-primary btn-sm">Prihvati</button>&nbsp' +
                     '<button data-parent="#checkout-page" onclick="clearFields()" data-toggle="collapse" data-target="#payment-address-content" id="sender" class="btn btn-primary btn-sm">Otkazi</button>');
                 setDataFields(data);
 

@@ -14,10 +14,13 @@ use App\CustomCase;
 class CustomCaseDTO extends ObjectDTO
 {
     public $comment;
+    public $model;
 
     public function getMessages()
     {
-        return [];
+        return [
+          'model.required'=>'Upišite model telefona'
+        ];
     }
     public function getModelClass()
     {
@@ -25,6 +28,8 @@ class CustomCaseDTO extends ObjectDTO
     }
     public function getRules()
     {
-        return [];
+      return  [
+          'model' => 'required'
+      ];
     }
 }

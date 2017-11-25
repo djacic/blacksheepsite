@@ -5,19 +5,24 @@
             <!-- BEGIN CONTENT -->
             <div class="col-md-12 col-sm-12">
                 <h1>Custom Case - Maska dok trepneš!</h1>
-                <p>Prelako je! Samo izaberite sliku!</p>
                 <div class="content-form-page">
                     <form role="form" class="form-horizontal form-without-legend" action="{{ url("custom-case/add") }}" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label">Izaberite sliku:</label>
+                            <label class="col-lg-2 control-label">Dodaj fotografiju:</label>
                             <div class="col-lg-8">
                                 <input type="file" name="file">
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="col-lg-2 control-label" for="model">Model telefona:</label>
+                            <div class="col-lg-8">
+                                <input type='text' class="form-control" name="model" size="20"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="col-lg-2 control-label" for="message">Napomene:</label>
                             <div class="col-lg-8">
-                                <textarea class="form-control" name="comment" rows="6"></textarea>
+                                <textarea class="form-control" name="comment" rows="5" size="20"></textarea>
                             </div>
                         </div>
                         <div class="row">

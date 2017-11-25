@@ -36,6 +36,7 @@ Route::get('/checkout', 'Checkout@index');
 Route::get('/sale', 'Clearance@index');
 Route::get('/orders', 'Orders@index');
 Route::get('/contact', 'Contact@index');
+Route::get('/about-us', 'AboutUs@index');
 Route::get('/delivery', 'Delivery@index');
 Route::get('/faq', 'Faq@index');
 Route::get('/privacy-policy', 'PrivacyPolicy@index');

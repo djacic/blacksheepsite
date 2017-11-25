@@ -106,6 +106,7 @@ $(document).ready(function(){
 
 function generateBrands(brands) {
     if(brands.length > 0) {
+        brands.sort();
         page.brandsDiv.empty();
         page.brandsDiv.parent().removeClass('hidden');
         for( let i =0; i < brands.length; i++) {
@@ -129,6 +130,7 @@ function generateTypes(types) {
 function generateCategories(categories) {
     page.categoriesDiv.empty();
     if(categories.length > 0) {
+      page.categoriesDiv.append('<li class="list-group-item clearfix dropdown purple"><a href="custom-case" class="bela" ><i class="fa fa-angle-right"></i>Custom Case</a></li>');
         for (let i = 0; i < categories.length; i++) {
             page.categoriesDiv.append('<li class="list-group-item clearfix dropdown customFont"><a href="#" onclick="byCategory('+ parseInt(categories[i].id) +')"><i class="fa fa-angle-right"></i>' + categories[i].name +'</a></li>');
         }
@@ -158,7 +160,8 @@ function callAjax(obj, dataObj) {
         url : "http://www.blacksheepmobstore.com/final/public/index.php/get-products",
         data : obj,
         beforeSend : function() {
-          page.productsDiv.html("<br><br><p class='lead text-center'><i class='fa fa-spin fa-circle-o-notch fa-5x'></i></p><br><br>");
+          // page.productsDiv.html("<br><br><p class='lead text-center'><i class='fa fa-spin fa-circle-o-notch fa-5x'></i></p><br><br>");
+          page.productsDiv.html("<br><br><img src='../assets/pages/img/loading.gif' width='800'/></br></br>")
         },
         success : function(data) {
             dataObj = data;

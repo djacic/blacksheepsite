@@ -18,6 +18,7 @@
     <meta content="oprema za mobilne telefone, usb kabal, staklo za telefon, maska za telefon, baterija za telefon" name="keywords">
     <meta content="keenthemes" name="author">
     <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="{{ asset("assets/plugins/google_apis/first.css") }}" rel="stylesheet" type="text/css">
     <link href="{{ asset("assets/plugins/google_apis/second.css") }}" rel="stylesheet" type="text/css">
     <link href="{{ asset("assets/plugins/font-awesome/css/font-awesome.min.css") }}" rel="stylesheet">
@@ -40,7 +41,7 @@
         <div class="row">
             <div class="col-md-6 col-sm-6 additional-shop-info">
                 <ul class="list-unstyled list-inline">
-                    <li><i class="fa fa-phone"></i><span>+381 65 63 14 535</span></li>
+                    <li><i class="fa fa-phone"></i><span>065 63 14 535</span></li>
                     <li><i class="fa fa-envelope"></i><span>info@blacksheepmobstore.com</span></li>
                 </ul>
             </div>
@@ -107,7 +108,7 @@
             <div class="col-md-4 steps-block-col">
                 <i class="fa fa-phone"></i>
                 <div>
-                    <h2>+ 381 65 63 14 535</h2>
+                    <h2>065 63 14 535</h2>
                     <em>Naručite pozivom ili porukom!</em>
                       <a href="whatsapp://tel:00381656314535" target="_blank" class='white'><img src="{{asset('assets/pages/img/whatsapp.png')}}" width="40" class='boxed'/></a>
                       <a href="viber://tel:00381656314535" target="_blank" class='white'><img src="{{asset('assets/pages/img/viber.png')}}" width="40" class='boxed'/></a>
@@ -123,7 +124,7 @@
         <div class="row">
             <!-- BEGIN BOTTOM ABOUT BLOCK -->
             <div class="col-md-3 col-sm-6 pre-footer-col">
-                <h2>NEŠTO DRUGO?</h2>
+                <h4><i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i></h4>
                 <p>Ukoliko imate želju da kupite nešto iz naše prodavnice, a niste uspeli da pronađete ono što vam je potrebno za Vaš model telefona u našem asortimanu,<br> pišite nam na <a href="contact">KONTAKT</a><br><b>Blacksheep tim</b> će se potruditi  da to pronađe za Vas i kontaktirati vas u najkraćem mogućem roku.</p>
             </div>
             <!-- END BOTTOM ABOUT BLOCK -->
@@ -131,10 +132,10 @@
             <div class="col-md-3 col-sm-6 pre-footer-col">
                 <h2>Informacije</h2>
                 <ul class="list-unstyled">
-                    <li><i class="fa fa-angle-right"></i> <a href="about-us">O nama</a></li>
-                    <li><i class="fa fa-angle-right"></i> <a href="contact">Kontakt</a></li>
-                    <li><i class="fa fa-angle-right"></i> <a href="custom-case">Custom Case</a></li>
-                    <li><i class="fa fa-angle-right"></i> <a href="privacy-policy">Politika poslovanja</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="http://blacksheepmobstore.com/final/public/index.php/about-us">O nama</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="http://blacksheepmobstore.com/final/public/index.php/contact">Kontakt</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="http://blacksheepmobstore.com/final/public/index.php/custom-case">Custom Case</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="http://blacksheepmobstore.com/final/public/index.php/privacy-policy">Politika poslovanja</a></li>
                 </ul>
             </div>
             <!-- END INFO BLOCK -->

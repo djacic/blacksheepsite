@@ -34,7 +34,7 @@
                                 <textarea class="form-control" rows="8" name="message" id="message"></textarea>
                             </div>
                             <div class="padding-top-20">
-                                <button type="submit" name="send" id="send" class="btn btn-primary">Posalji</button>
+                                <button type="submit" name="send" id="send" class="btn btn-primary">Pošalji</button>
                             </div>
                         </form>
                         <!-- END FORM-->

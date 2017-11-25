@@ -330,7 +330,7 @@ Pre-Header and pre-header elements
 	border-bottom: 1px solid #eee;
 	padding-top: 10px;
 	line-height: 1.2;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	background: #fff;
 }
@@ -915,7 +915,7 @@ Sidebar
     top: 0;
     left: 0;
     z-index: 1000;
-    font: 15px 'PT Sans Narrow', sans-serif;
+    font: 15px 'Raleway', sans-serif;
 }
 
 .sidebar .dropdown-menu:after,
@@ -1025,7 +1025,7 @@ steps block and steps block elements
 /* shop */
 .steps-block {
 	color: #fff;
-	padding: 10px 0;	
+	padding: 10px 0;
 }
 .steps-block ::-moz-selection {
   color: #e45000;
@@ -1116,7 +1116,7 @@ steps block and steps block elements
 	float: left;
 }
 .ecommerce .title-wrapper h1, .title-wrapper em {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #fff;
 	font-weight: 400;
 }

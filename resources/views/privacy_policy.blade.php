@@ -24,7 +24,7 @@
                   <li>U slučaju bilo kakve promene prodavac je dužan da obavesti kupca telefonom.</li>
                 </ul>
                 <h2>Rokovi dostave</h2>
-                <p>Nakon slanja narudžbine u Internet Prodavnici, za isporuku robe potrebno je od 1 do 2 radna dana.</br> Sve narudžbine koje primimo do 15h šalju se istog dana, a narudžbine koje su pristigle posle 15h šalju se sutradan.</p>
+                <p>Nakon slanja narudžbine u Internet Prodavnici, za isporuku robe potrebno je od 1 do 2 radna dana.</p>
                 <h2>Troškovi isporuke</h2>
                 <p>Troškovi isporuke za područje Republike Srbije se obračunavaju po važećem cenovniku PostExpress kurirske službe.</br> Standardna dostava se šalje uslugom „danas za sutra“.</br> Cena dostave biće naznačena na adresnici prilikom isporuke robe. Troškove dostave plaća naručilac .</p>
                 <h2>Ograničenja isporuke robe</h2>

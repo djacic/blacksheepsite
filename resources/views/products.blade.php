@@ -21,7 +21,7 @@
                         <ul class="pagination pull-right" id="pagination">
                             <li class="paginationStart"><a onclick="changePage(1)"  href="#position">&laquo;</a></li>
 
-                            <li class="paginationEnd"><a id="pgLast" href="#position">&raquo</a></li>
+                            <li class="paginationEnd"><a id="pgLast" href="#position">&raquo;</a></li>
                         </ul>
                     </div>
                 </div>

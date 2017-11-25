@@ -33,4 +33,5 @@ class CategoryRepository extends AbstractRepository
     {
         return $this->model->orderBy('name', 'ASC')->get();
     }
+
 }

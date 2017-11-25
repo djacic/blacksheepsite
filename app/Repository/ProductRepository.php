@@ -35,7 +35,9 @@ class ProductRepository extends AbstractRepository
     public function all() {
         return $this->model->all();
     }
-
+    public function allActive(){
+      return $this->model->where('is_active',1)->get();
+    }
     public function findAll()
     {
        return $this->model->with([

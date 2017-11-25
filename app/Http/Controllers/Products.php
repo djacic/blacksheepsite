@@ -45,7 +45,7 @@ class Products extends Controller
         } else {
             switch ($request->get('type')) {
                 case 'all':
-                    $filteredData = $this->filterProducts($request, Product::getRepository()->all());
+                    $filteredData = $this->filterProducts($request, Product::getRepository()->allActive());
                     $response['products'] = $filteredData['products'];
                     $response['pages'] = $filteredData['pagesNum'];
                     $response['categories'] = Category::getRepository()->findAll();
@@ -189,6 +189,7 @@ class Products extends Controller
             $item->price = $product->prices()->first()['price'];
             $item->picture = $product->picture;
             array_push($collection, $item);
+
         }
         return [
             'products' => $collection,

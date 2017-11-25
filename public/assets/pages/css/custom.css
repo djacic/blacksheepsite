@@ -1,3 +1,9 @@
+.purple{
+  background-color:purple!important
+}
+.bela{
+  color:white!important
+}
 .filterBox{
   width:100%;
   max-width: 100%;
@@ -6,7 +12,8 @@
   padding-left: 10px;
   border:1px solid #ccc;
   border-radius:10px;
-  margin-bottom:7px
+  margin-bottom:7px;
+  font-size:14px!important
 }
 .reducecontrol{
   height:24px
