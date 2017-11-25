@@ -214,7 +214,6 @@ function createProduct(product) {
    let saleSticker = null;
    let newSticker = null;
    if(product.is_offer == 1)saleSticker = "sticker-sale";
-
    let productDiv = '<div class="product-item ' + page.productsClass + '">\n' +
        '                    <div class="pi-img-wrapper">\n' +
        '                        <img src="http://www.blacksheepmobstore.com/final/public/assets/pages/img/products/' + product.picture.file + '" class="img-responsive" alt="">\n' +
@@ -233,5 +232,7 @@ function createProduct(product) {
        // '                        <div class="sticker sticker-new"></div>\n' +
        '\n' +
        '                </div>';
-   page.productsDiv.append(productDiv);
+       product.is_active == 1 ? page.productsDiv.append(productDiv) : false
+
+
 }

@@ -185,6 +185,7 @@ class Products extends Controller
             $item->id = $product->id;
             $item->name = $product->name;
             $item->is_offer = $product->is_offer;
+            $item->is_active = $product->is_active;
             $item->price = $product->prices()->first()['price'];
             $item->picture = $product->picture;
             array_push($collection, $item);

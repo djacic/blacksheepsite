@@ -60,7 +60,7 @@ class UserDTO extends ObjectDTO
             'lastName' => 'required|min:3|max:30',
             'email' => 'required|email',
             'address' => 'required|max:70',
-            'phone' => 'required|min:11|max:12',
+            'phone' => 'required|min:9',
             'city' => 'required|min:2',
             'postNumber' => 'required|numeric|min:5',
             'token' => 'required'

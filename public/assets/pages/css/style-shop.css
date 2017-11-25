@@ -324,10 +324,14 @@ Header and header elements
 	font: 13px "PT Sans Narrow", sans-serif;
 }
 
+#products{
+	margin-bottom: 30px
+}
+
 /* Catalogue styles */
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
 	.product-item {
-	height:360px!important;
+	height:380px!important;
 }
 }
 .product-item {
