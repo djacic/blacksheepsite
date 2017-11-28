@@ -16,18 +16,18 @@
                         @component('components.search_category')@endcomponent
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
+                    <div id="products" class="row">
+
+                    </div>
+                    <div id='row' >
+                    <div class="col-md-12 col-sm-12" style='margin-bottom:20px'>
                         <ul class="pagination pull-right" id="pagination">
                             <li class="paginationStart"><a onclick="changePage(1)"  href="#position">&laquo;</a></li>
 
                             <li class="paginationEnd"><a id="pgLast" href="#position">&raquo;</a></li>
                         </ul>
                     </div>
-                </div>
-                    <div id="products" class="row">
-
-                    </div>
+                  </div>
                 </div>
         </div>
     </div>

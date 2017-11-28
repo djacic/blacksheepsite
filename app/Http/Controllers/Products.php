@@ -13,7 +13,6 @@ use App\Product;
 use Illuminate\Support\Facades\Log;
 use Mockery\Exception;
 use PhpParser\Error;
-
 class Products extends Controller
 {
     private $repo;
@@ -165,12 +164,28 @@ class Products extends Controller
                     break;
             }
         }
-
+        function match_all($needles, $haystack)
+        {
+            foreach($needles as $needle) {
+                if (strpos(strtolower($haystack), strtolower($needle)) == false) {
+                    return false;
+                }
+            }
+            return true;
+        }
         $page = $request->get('page') ? $request->get('page') : 1;
         $keyword = $request->has('keyword') ? $request->get('keyword') : null;
         if ($keyword) {
+
             $filtered = $products->filter(function ($value) use ($keyword){
-                return strpos(strtolower($value->name), strtolower($keyword)) !== false;
+            $needles = explode(" ", $keyword);
+            $unwanted_array = array(    'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'č'=>'c', 'ć'=>'c', 'Č'=>'C', 'Ć'=>'C');
+            $haystack = $value->name;
+            $haystack2 = strtr(strtolower($value->name), $unwanted_array );
+
+            return  match_all($needles, $haystack) !== false || match_all($needles,$haystack2) !== false;
+
+
             });
             $pagesNum = $this->getPagesNum($filtered);
             $result = $filtered->forPage($page, 12);
@@ -186,7 +201,7 @@ class Products extends Controller
             $item->name = $product->name;
             $item->is_offer = $product->is_offer;
             $item->is_active = $product->is_active;
-            $item->price = $product->prices()->first()['price'];
+            $item->price = $product->prices()->latest()->first()['price'];//first()['price'];
             $item->picture = $product->picture;
             array_push($collection, $item);
 

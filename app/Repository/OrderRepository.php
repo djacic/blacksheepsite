@@ -19,14 +19,15 @@ class OrderRepository extends AbstractRepository
     }
 
     public function newOrders()
-    {
-        return $this->model->with(
-            [
-                'user',
-                'products.picture',
-                'products.prices' => function($query) {
-                    $query->orderBy('created_at', 'desc')->first();
-                },
-            ])->get();
-    }
+   {
+       return $this->model->with(
+           [
+               'user',
+               'products.picture',
+               'products.prices' => function($query) {
+                   $query->orderByDesc('created_at')->first();
+               },
+               'products.colors'
+           ])->get();
+   }
 }

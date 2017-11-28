@@ -29,7 +29,7 @@ function userByToken(sender)
 {
     var token = $("#token").val();
     $.ajax({
-        url : "http://www.blacksheepmobstore.com/final/public/index.php/token",
+        url : "http://localhost/blacksheep/blacksheepsite/public/index.php/token",
         data: {
             token : token
         },

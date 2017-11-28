@@ -109,7 +109,7 @@
                 <i class="fa fa-phone"></i>
                 <div>
                     <h2>065 63 14 535</h2>
-                    <em>Naručite pozivom ili porukom!</em>
+                    <em>Naručite pozivom ili porukom</em>
                       <a href="whatsapp://tel:00381656314535" target="_blank" class='white'><img src="{{asset('assets/pages/img/whatsapp.png')}}" width="40" class='boxed'/></a>
                       <a href="viber://tel:00381656314535" target="_blank" class='white'><img src="{{asset('assets/pages/img/viber.png')}}" width="40" class='boxed'/></a>
                 </div>

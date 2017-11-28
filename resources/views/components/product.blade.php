@@ -9,10 +9,11 @@
                     </div>
                     <h3><a href="#" id="productName">{{ $product['name'] }}</a></h3>
                     <div class="pi-price"><span id="price">Cena: {{ $product->prices->first()['price'] }}</span> RSD</div>
-                    <form action="{{ url("/order/place") }}" method="post">
+                    <!-- <form action="{{ url("/order/place") }}" method="post">
                         <input type="hidden" id="productId" name="id" value="{{ $product['id'] }}">
                         <input type="submit" name="order" class="btn btn-default add2cart" value="Dodaj u korpu">
-                    </form>
+                    </form> -->
+                    <a href="#product-pop-up" onclick="getProductDetails({{$product['id']}})" class="btn btn-default add2cart fancybox-fast-view">Dodaj u korpu</a>
                     @if($product['is_offer'])
                         <div class="sticker sticker-sale"></div>
                     @endif

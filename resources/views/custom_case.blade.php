@@ -5,6 +5,24 @@
             <!-- BEGIN CONTENT -->
             <div class="col-md-12 col-sm-12">
                 <h1>Custom Case - Maska dok trepneš!</h1>
+                <p>
+                  Ako ne želite da budete kao drugi, ako ne želite da Vam drugi<br>
+                  ograničavaju izbor i želite nešto samo svoje, onda je ovo stranica baš za Vas !<br><br>
+                  Nudimo Vam mogućnost da fotografije koje volite i koje Vam znače<br>
+                  budu uvek sa Vama – na futroli Vašeg mobilnog telefona.<br><br>
+                  Želite fotografiju Vašeg kućnog ljubimca, članova porodice, osobe koju volite<br>
+                  ili ličnosti kojoj se divite? Igrajte se dizajniranja i napravite svoju unikatnu futrolu.<br><br>
+                  Jedina granica je Vaša kreativnost. Na nama je da je realizujemo.<br>
+                  Dovoljno je da pripremite fotografiju, pošaljete nam je i odaberite model futrole koji želite.<br>
+                  Mi ćemo na odabranom modelu odštampati fotografiju za Vas.<br><br>
+
+                  Imaćete kvalitetnu i trajnu futrolu kojoj ćete sami dati jedinstven dizajn.<br>
+                  Kreirajte, stvarajte i budite drugačiji !<br><br>
+                  Cena futrole sa štampom:<br>
+                  799 din na klasičnom (debljem) silikonu<br>
+                  799 din na ultra tankom silikonu<br><br>
+                  Napomena : Za izradu samo Vaše futrole potrebno je od 3 do 5 radnih dana
+                </p>
                 <div class="content-form-page">
                     <form role="form" class="form-horizontal form-without-legend" action="{{ url("custom-case/add") }}" method="post" enctype="multipart/form-data">
                         <div class="form-group">

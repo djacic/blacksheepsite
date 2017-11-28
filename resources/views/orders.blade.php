@@ -2,8 +2,6 @@
 @section('content')
 <div class="main">
     <div class="container">
-
-
         <!-- BEGIN CONTENT -->
         <div class="col-md-9 col-sm-7">
             <h1>Moj Black Sheep</h1>

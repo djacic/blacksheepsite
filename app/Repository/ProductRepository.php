@@ -33,21 +33,21 @@ class ProductRepository extends AbstractRepository
     }
 
     public function all() {
-        return $this->model->all();
-    }
+       return $this->model->where("is_active", 1)->get();
+   }
     public function allActive(){
       return $this->model->where('is_active',1)->get();
     }
     public function findAll()
-    {
-       return $this->model->with([
-            'picture',
-            'prices' => function($query) {
-                $query->orderBy('created_at', 'desc');
-            },
-            'colors'
-        ])->where('is_active',1)->get();
-    }
+   {
+      return $this->model->with([
+           'picture',
+           'prices' => function($query) {
+               $query->orderByDesc('created_at');
+           },
+           'colors'
+       ])->where('is_active',1)->get();
+   }
 
     public function exportAll()
     {

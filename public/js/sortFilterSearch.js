@@ -1,3 +1,9 @@
+/* Search enter */
+$(document).keypress(function(e){
+    if (e.which == 13){
+        $("#searchProducts").click();
+    }
+});
 /*
   Sortiranje proizvoda po odredjenom kriterijumu
 */
@@ -130,7 +136,7 @@ function generateTypes(types) {
 function generateCategories(categories) {
     page.categoriesDiv.empty();
     if(categories.length > 0) {
-      page.categoriesDiv.append('<li class="list-group-item clearfix dropdown purple"><a href="custom-case" class="bela" ><i class="fa fa-angle-right"></i>Custom Case</a></li>');
+      page.categoriesDiv.append('<li class="list-group-item clearfix dropdown"><a href="custom-case"><i class="fa fa-angle-right"></i>Custom Case</a></li>');
         for (let i = 0; i < categories.length; i++) {
             page.categoriesDiv.append('<li class="list-group-item clearfix dropdown customFont"><a href="#" onclick="byCategory('+ parseInt(categories[i].id) +')"><i class="fa fa-angle-right"></i>' + categories[i].name +'</a></li>');
         }
@@ -161,7 +167,7 @@ function callAjax(obj, dataObj) {
         data : obj,
         beforeSend : function() {
           // page.productsDiv.html("<br><br><p class='lead text-center'><i class='fa fa-spin fa-circle-o-notch fa-5x'></i></p><br><br>");
-          page.productsDiv.html("<br><br><img src='../assets/pages/img/loading.gif' width='800'/></br></br>")
+          page.productsDiv.html("<br><br><img src='../assets/pages/img/loading.gif' width='500' style='max-width:100%; margin:0 auto; display:block'/></br></br>")
         },
         success : function(data) {
             dataObj = data;
@@ -227,10 +233,11 @@ function createProduct(product) {
        '                    </div>\n' +
        '                    <h3><a href="#" id="productName">'+ product.name +'</a></h3>\n' +
        '                    <div class="pi-price"><span id="price">'+ product.price + '</span> RSD</div>\n' +
-       '                    <form action="http://www.blacksheepmobstore.com/final/public/index.php/order/place" method="post">\n' +
-       '                        <input type="hidden" id="productId" name="id" value="'+ product.id +'">\n' +
-       '                        <input type="submit" name="order" class="btn btn-default add2cart" value="Dodaj u korpu">\n' +
-       '                    </form>\n' +
+       // '                    <form action="http://www.blacksheepmobstore.com/final/public/index.php/order/place" method="post">\n' +
+       // '                        <input type="hidden" id="productId" name="id" value="'+ product.id +'">\n' +
+       // '                        <input type="submit" name="order" class="btn btn-default add2cart" value="Dodaj u korpu">\n' +
+       // '                    </form>\n' +
+       '<a href="#product-pop-up" onclick="getProductDetails('+ product.id +')" class="btn btn-default add2cart fancybox-fast-view">Dodaj u korpu</a>\n' +
        '                        <div class="sticker '+ saleSticker +'"></div>\n' +
        // '                        <div class="sticker sticker-new"></div>\n' +
        '\n' +
